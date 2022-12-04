@@ -4,13 +4,14 @@
 Console.Clear();
 Console.WriteLine("Введите число ");
 int N = Convert.ToInt32(Console.ReadLine());
-int Number1 = N;
-int FindNumber = N;
+N = Math.Abs(-N);
 if (N >= 100)
 {
     while (N >= 1000)
-        Number1 = (N /= 10);
-        FindNumber = (Number1 % 10);
-    Console.Write($"Третья цифра заданного числа: {FindNumber}");
+        //Переводим введенное число в трехзначное
+        N = (N /= 10);
+        // Определяем третью цифру (остаток от деления на 10)
+        int FindDigit = ((N /= 10) % 10);
+    Console.Write($"Третья цифра заданного числа: {FindDigit}");
 }
 else Console.Write("В данном числе 3-я цифра отсутствует");

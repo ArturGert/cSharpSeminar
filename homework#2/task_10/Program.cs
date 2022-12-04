@@ -4,6 +4,7 @@
 Console.Clear();
 Console.WriteLine("Введите трёхзначное число ");
 int N = Convert.ToInt32(Console.ReadLine());
+N = Math.Abs(-N);
 if ((N>=100) && (N<=999))
 {
    Console.WriteLine((N/10) % 10); 
