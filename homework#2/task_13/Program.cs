@@ -4,7 +4,6 @@
 Console.Clear();
 Console.WriteLine("Введите число ");
 int N = Convert.ToInt32(Console.ReadLine());
-N = Math.Abs(-N);
 if (N >= 100)
 {
     while (N >= 1000)
