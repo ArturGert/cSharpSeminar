@@ -22,6 +22,7 @@ else System.Console.WriteLine("Ввели некорректное число! �
 }
 return true;
 }
+Console.Clear();
 if(CheckPalindrom("Введите число"))
     System.Console.WriteLine($"Введенное число является палиндромом");
 else System.Console.WriteLine($"Введенное число не является палиндромом");
