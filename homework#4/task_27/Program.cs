@@ -27,4 +27,4 @@ int GetSum(int n)
 Console.Clear();
 int n = GetNumber("Введите число: ");
 int sum = GetSum(n);
-System.Console.Write($"Сумма цифр цисла {n} составляет: {sum}");
+System.Console.Write($"Сумма цифр цисла {n} равна: {sum}");
