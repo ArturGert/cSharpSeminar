@@ -5,16 +5,12 @@
 void GetArr(int[] array) //Заполняет массив случайными трехзначными числами.
 {
     for (int i = 0; i < array.Length; i++)
-    {
         array[i] = new Random().Next(-100,100);
-    }
 }
 void PrintArr(int[] array) //Выводит полученный массив на консоль.
 {
     for (int i = 0; i < array.Length; i++)
-    {
         System.Console.Write(array[i] + (i < array.Length - 1 ? "," + " " : " "));
-    }
 }
 void GetSum(int[] array) // Определяет сумму элементов, стоящих на нечетных позициях массива.
 {
