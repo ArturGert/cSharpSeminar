@@ -4,8 +4,9 @@
 
 void GetArr(int[] array) //Заполняет массив случайными трехзначными числами.
 {
+    Random num = new Random();
     for (int i = 0; i < array.Length; i++)
-        array[i] = new Random().Next(-100,100);
+        array[i] = num.Next(-100,100);
 }
 void PrintArr(int[] array) //Выводит полученный массив на консоль.
 {
@@ -14,12 +15,12 @@ void PrintArr(int[] array) //Выводит полученный массив н
 }
 void GetSum(int[] array) // Определяет сумму элементов, стоящих на нечетных позициях массива.
 {
-int sum = 0;
-for (int i = 1; i < array.Length;)
-{
+    int sum = 0;
+    for (int i = 1; i < array.Length;)
+    {
         sum = sum + array[i];
         i += 2;
-}
+    }
 System.Console.WriteLine();
 System.Console.Write($"Сумма чисел, стоящих на нечетных позициях заданного массива, равна {sum}");
 }

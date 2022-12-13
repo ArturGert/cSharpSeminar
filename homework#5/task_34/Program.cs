@@ -2,18 +2,19 @@
 [345, 897, 568, 234] -> 2*/
 void GetArr(int[] array) //Заполняет массив случайными трехзначными числами
 {
-for (int i = 0; i < array.Length; i++)
-    array[i] = new Random().Next(100,1000); // от 100 до 999
+    Random num = new Random();
+    for (int i = 0; i < array.Length; i++)
+    array[i] = num.Next(100,1000); // от 100 до 999
 }
 void PrintArr(int[] array) //Выводит полученный массив на консоль 
 {
-for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     System.Console.Write(array[i] + (i < array.Length -1 ? "," : ""));
 }
 void GetCount (int[] myArr) // Определяет количество четных чисел в массиве
 {
-int count = 0;
-for (int i = 0; i < myArr.Length; i++)
+    int count = 0;
+    for (int i = 0; i < myArr.Length; i++)
 {
     if (myArr[i] % 2 == 0)
         count ++;
