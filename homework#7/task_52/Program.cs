@@ -4,7 +4,6 @@
 5 9 2 3
 8 4 2 4
 Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.*/
-//  Решение с методом и проверками
 int GetNumber (string message)  // Проверяет вводимое значение
 {
     int result;
@@ -56,21 +55,5 @@ int n = GetNumber ("Введите размерность столбца мас�
 int [,] newArr = GetArray(m,n);
 PrintArray(newArr);
 GetSumm(newArr);
-// Решение без проверок и методов
-/*int[,] myArr = new int[,] 
-{
-    {10, 4, 27, 2},
-    {5, 19, 21, 3},
-    {18, 14, 12, 4}
-};
-Console.Clear();
-double sum0 = Convert.ToDouble((myArr[0,0] + myArr[1,0] + myArr[2,0]));
-double sum1 = Convert.ToDouble((myArr[0,1] + myArr[1,1] + myArr[2,1]));
-double sum2 = Convert.ToDouble((myArr[0,2] + myArr[1,2] + myArr[2,2]));
-double sum3 = Convert.ToDouble((myArr[0,3] + myArr[1,3] + myArr[2,3]));
-double avg0 = Math.Round((sum0 / myArr.GetLength(0)), 2);
-double avg1 = Math.Round((sum1 / myArr.GetLength(0)), 2);
-double avg2 = Math.Round((sum2 / myArr.GetLength(0)), 2);
-double avg3 = Math.Round((sum3 / myArr.GetLength(0)), 2);
-System.Console.WriteLine($"Среднее арифмитическое соответствующего столбца: {avg0} ; {avg1} ; {avg2} ; {avg3}");*/
+
 
