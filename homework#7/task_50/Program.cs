@@ -5,27 +5,27 @@
 8 4 2 4
 17 -> такого числа в массиве нет*/
 // Решение без проверок и методов
-int[,] myArr = new int[,] 
-{
-    {1, 4, 7, 2},
-    {5, 9, 2, 3},
-    {8, 4, 2, 4}
-};
-Console.Clear();
-Console.Write("Введите индекс строки: ");
-string num0 = Console.ReadLine() ?? "";
-int dimension1 = Convert.ToInt32((num0));
-Console.Write("Введите индекс столбца: ");
-string num1 = Console.ReadLine() ?? "";
-int dimension2 = Convert.ToInt32((num1));
-if(dimension1 < myArr.GetLength(0) && dimension2 < myArr.GetLength(1))
-    {
-       System.Console.WriteLine($"Элемент с индексом {dimension1} и {dimension2} : " + myArr[dimension1,dimension2]); 
-    }  
-else System.Console.WriteLine($"Данный элемент в массиве отсутствует");
+// int[,] myArr = new int[,] 
+// {
+//     {1, 4, 7, 2},
+//     {5, 9, 2, 3},
+//     {8, 4, 2, 4}
+// };
+// Console.Clear();
+// Console.Write("Введите индекс строки: ");
+// string num0 = Console.ReadLine() ?? "";
+// int dimension1 = Convert.ToInt32((num0));
+// Console.Write("Введите индекс столбца: ");
+// string num1 = Console.ReadLine() ?? "";
+// int dimension2 = Convert.ToInt32((num1));
+// if(dimension1 < myArr.GetLength(0) && dimension2 < myArr.GetLength(1))
+//     {
+//        System.Console.WriteLine($"Элемент с индексом {dimension1} и {dimension2} : " + myArr[dimension1,dimension2]); 
+//     }  
+// else System.Console.WriteLine($"Данный элемент в массиве отсутствует");
 
 // Решение с применением методов и проверками на число
-/*int GetNumber (string message)  // Проверяет вводимое значение
+int GetNumber (string message)  // Проверяет вводимое значение
 {
     int result;
     while(true)
@@ -60,6 +60,7 @@ void GetValue (int [,] myArr, int dim1, int dim2)
 {
 
     if(dim1 < myArr.GetLength(0) && dim2 < myArr.GetLength(1))
+
         System.Console.WriteLine($"Элемент с индексом {dim1} и {dim2} : " + myArr[dim1,dim2]);
     else System.Console.WriteLine($"Данный элемент в массиве отсутствует");
 }
@@ -69,7 +70,7 @@ int [,] newArr = GetArray(m,n);
 PrintArray(newArr);
 int m1 = GetNumber ("Введите индекс строки искомого элемента : ");
 int n1 = GetNumber ("Введите индекс столбца искомого элемента : ");
-GetValue(newArr, m1, n1);*/
+GetValue(newArr, m1, n1);
 
 
 

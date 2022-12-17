@@ -34,6 +34,7 @@ void PrintArray (double [,] myArr)
         for (int j = 0; j < myArr.GetLength(1); j++)
             System.Console.Write($"{myArr[i,j]} ");
     System.Console.WriteLine();
+
     }
 }
 Console.Clear();
