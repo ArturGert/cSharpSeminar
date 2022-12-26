@@ -18,9 +18,9 @@ int GetNumber(string message)
 // Функция выдачи значений
 string AddNumbers(int n)
 {
-    if(n == 1)
+    if (n == 1)
         return n.ToString();
-    return n + ", " + AddNumbers(n-1);
+    return n + ", " + AddNumbers(n - 1);
 }
 Console.Clear();
 int n = GetNumber("Введите число N: ");
